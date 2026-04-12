@@ -1,0 +1,15 @@
+{
+	"name": "demos",
+	"private": true,
+	"version": "0.0.1",
+	"packageManager": "pnpm@10.33.0",
+	"description": "",
+	"scripts": {
+		"format": "biome format",
+		"lint": "biome lint"
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.11"
+	}
+}
