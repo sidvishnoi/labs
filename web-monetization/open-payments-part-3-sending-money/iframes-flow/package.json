@@ -2,7 +2,8 @@
 	"scripts": {
 		"dev": "parcel index.html --no-autoinstall --cache-dir .parcel-cache",
 		"build": "parcel build index.html --cache-dir .parcel-cache",
-		"build:clean": "rm -rf dist .parcel-cache && pnpm build"
+		"build:clean": "pnpm clean && pnpm build",
+		"clean": "rm -rf dist .parcel-cache"
 	},
 	"dependencies": {
 		"roughjs": "4.6.6"
