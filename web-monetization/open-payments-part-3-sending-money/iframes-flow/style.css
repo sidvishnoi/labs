@@ -1,0 +1,98 @@
+:root {
+	color-scheme: light dark;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: system-ui, sans-serif;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.svgs {
+	display: flex;
+	column-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+svg {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.controls {
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 1.5rem;
+	position: absolute;
+	right: 1rem;
+	top: -1rem;
+	padding: 0.1rem;
+}
+button {
+	appearance: none;
+	padding: 8px 16px;
+	font-family: inherit;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: light-dark(#fce27c, #111);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border: 1px solid light-dark(#222, #e7cf6e);
+	border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+	scale: 1.05;
+}
+
+@media (max-width: 600px) {
+	button {
+		padding: 6px 12px;
+		font-size: 12px;
+	}
+}
+
+.block path {
+	stroke: light-dark(#333, #eee);
+}
+.block-label {
+	font-size: 16px;
+	text-anchor: middle;
+	fill: light-dark(#333, #eee);
+	font-weight: bold;
+}
+.link-label {
+	font-family: monospace;
+	font-size: 9px;
+	text-anchor: middle;
+	fill: light-dark(#333, #eee);
+}
+
+.link-block.active path,
+.active path {
+	stroke: #ffcc00;
+}
+.active text {
+	fill: #ffcc00;
+}
+
+@media screen and (orientation: portrait) {
+	.svgs {
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="color-scheme" content="light dark">
+		<title>
+			Web Monetization extension with link element cycling with iframes
+		</title>
+		<link rel="stylesheet" href="./style.css">
+		<script type="module" src="./script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="controls">
+				<button type="button" id="play" aria-label="Play" title="Play">
+					▶
+				</button>
+				<button type="button" id="next" aria-label="Next" title="Next">
+					⏭
+				</button>
+			</div>
+			<div class="svgs">
+				<svg
+					id="svgMain"
+					viewBox="0 0 320 270"
+					preserveAspectRatio="xMidYMid meet"
+				>
+					<title>Main website</title>
+				</svg>
+				<svg
+					id="svgIframe"
+					viewBox="0 0 320 270"
+					preserveAspectRatio="xMidYMid meet"
+				>
+					<title>Iframes</title>
+				</svg>
+			</div>
+		</div>
+	</body>
+</html>

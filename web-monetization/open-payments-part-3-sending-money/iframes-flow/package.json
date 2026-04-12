@@ -1,0 +1,22 @@
+{
+	"scripts": {
+		"dev": "parcel index.html --no-autoinstall --cache-dir .parcel-cache",
+		"build": "parcel build index.html --cache-dir .parcel-cache",
+		"build:clean": "rm -rf dist .parcel-cache && pnpm build"
+	},
+	"dependencies": {
+		"roughjs": "4.6.6"
+	},
+	"devDependencies": {
+		"parcel": "^2.16.4"
+	},
+	"targets": {
+		"default": {
+			"publicUrl": "./",
+			"context": "browser",
+			"outputFormat": "esmodule",
+			"sourceMap": false
+		}
+	},
+	"type": "module"
+}
