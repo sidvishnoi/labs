@@ -1,5 +1,5 @@
 {
-	"name": "demos",
+	"name": "sidvishnoi-labs",
 	"private": true,
 	"type": "module",
 	"version": "0.0.1",
@@ -9,10 +9,11 @@
 		"format": "biome format",
 		"lint": "biome lint",
 		"predeploy": "node prepare.js",
-		"deploy": "echo hey"
+		"deploy": "wrangler deploy"
 	},
 	"license": "ISC",
 	"devDependencies": {
-		"@biomejs/biome": "2.4.11"
+		"@biomejs/biome": "2.4.11",
+		"wrangler": "^4.81.1"
 	}
 }
